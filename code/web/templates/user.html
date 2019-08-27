@@ -1,0 +1,23 @@
+{% extends 'base/base.html' %}
+{% block content %}
+<div class="card" style="width: 18rem;">
+  <img src="https://i.blogs.es/aece81/ssoo2/1024_2000.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    <h4>Holas usuario:</h4>
+    <h4>{{ name }} </h4>
+    <p>{{ age }}</p>
+
+    {% if age > 18 %}
+        <p>es mayor de edad</p>
+    {% endif %}
+
+    {% for item in list %}
+        <p> {{item}} </p>
+    {% endfor %}
+{% endblock  %}
+
